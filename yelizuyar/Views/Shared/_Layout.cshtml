@@ -1,0 +1,183 @@
+﻿@using yelizuyar.Models
+@{
+    MetaViewModel meta = ViewBag.Meta as MetaViewModel;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en-us">
+
+    <meta name="rating" content="general" />
+    <meta name="abstract" content="security" />
+    <meta name="distribution" content="global" />
+    <meta name="application-name" content="yogaintown" />
+    <meta name="robots" content="all" />
+    <meta name="publisher" content="Yeliz Saraçoğlu Uyar">
+    <meta name="copyright" content="Yoga In Town">
+    <meta name="page-type" content="Blogging">
+    <meta name="audience" content="Everyone">
+
+    <meta name="twitter:card" content="summary_larg_image" />
+    <meta name="twitter:title" content="@meta.Title" />
+    <meta name="twitter:site" content="@meta.Url" />
+    <meta name="twitter:description" content="@meta.Description" />
+    <meta name="twitter:image" content="@meta.Image" />
+    <meta name="description" content="@meta.Description" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Yoga In Twon" />
+    <meta property="og:title" content="@meta.Title" />
+    <meta property="og:description" content="@meta.ogDescription" />
+    <meta property="og:image" content="@meta.ogImage" />
+    <meta property="og:url" content="@meta.Url" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="@meta.Title" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="https://uploads.yogaintown.co.uk/images/favicon-logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://uploads.yogaintown.co.uk/images/favicon-logo.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="canonical" href="https://yogaintown.co.uk/">
+    <link rel="manifest" href="~/manifest.json" crossorigin="use-credentials" />
+
+    <title>@meta.Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="~/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="https://uploads.yogaintown.co.uk/site/css/style.css">
+    <link class="skin" rel="stylesheet" type="text/css" href="https://uploads.yogaintown.co.uk/site/css/skin/skin-3.css">
+    <link rel="stylesheet" type="text/css" href="https://uploads.yogaintown.co.uk/site/css/templete.css">
+    <link rel="stylesheet" type="text/css" href="~/css/mobile.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://uploads.yogaintown.co.uk/site/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="https://uploads.yogaintown.co.uk/site/plugins/revolution/css/navigation.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Playball|Playfair+Display:400,400i,700,700i,900,900i|Prata&display=swap" rel="stylesheet">
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+
+</head>
+<body id="bg">
+    <div class="page-wraper">
+        <!-- header -->
+        <header class="site-header header header-transparent navstyle1 mo-left">
+            <!-- main header -->
+            <div class="main-bar-wraper navbar-expand-lg">
+                <div class="main-bar clearfix ">
+                    <div class="container clearfix">
+
+                        <!-- website logo -->
+                        <div class="logo-header mostion"><a href="/home/homepage"><img class="logo-mobile" 
+                                                                                       style="padding: 15px 0px 0px 0px; max-width: 135px; position: relative; left: -15px;" 
+                                                                                       src="https://uploads.yogaintown.co.uk/images/logo-white.png" width="193" height="89" alt="logo-white" loading="lazy"></a></div>
+
+                        <!-- nav toggle button -->
+                        <button class="btn-hamburger navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <!-- main nav -->
+                        <div class="header-nav navbar-collapse collapse justify-content-end" style="position: relative; top: 45px;" id="navbarNavDropdown">
+                            <ul class=" nav navbar-nav">
+                                <li class="active"><a href="/home/homepage">Home</a></li>
+                                <li><a href="/mystory">My Story</a></li>
+                                <li><a href="/privateyogalessons" class="has-">Private Yoga Lessons</a></li>
+                                <li>
+                                    <a href="javascript:;">Trainings-Workshops-Retreats <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/teachertrainingcourse">200 Hour Specialisation In Yoga Teacher Training Course</a></li>
+                                        <li><a href="/mindfulnessprogrammeforbusiness">Mindfulness Programme For Business</a></li>
+                                        <li><a href="/corporatewellbeingworkshops">Corporate Wellbeing Workshops</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/shop">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- main header END -->
+        </header>
+        <!-- header END -->
+        <!-- Content -->
+        <div class="page-content" style="padding-bottom:0px;">
+            <!-- Slider Banner -->
+           @RenderBody()
+
+        </div>
+
+        <footer class="site-footer text-center footer-yoga">
+            <div class="footer-top" style="padding-top: 85px; background: #765121; ">
+                <div class="container">
+                    <div class="row">     
+                        <div class="col-md-12 col-sm-12">
+                            <p>Copyright © 2022 Yoga In Town. All Rights Reserved. | <a href="https://www.instagram.com/yogaintownuk/?hl=tr" rel="nofollow"><i class="fab fa-instagram"></i> yogaintownuk</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+   
+        <button class="scroltop icon-up style3"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <!-- JavaScript  files ========================================= -->
+    <script src="https://uploads.yogaintown.co.uk/site/js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+    <script src="https://uploads.yogaintown.co.uk/site/js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="https://uploads.yogaintown.co.uk/site/js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
+
+    <script src="https://uploads.yogaintown.co.uk/site/js/dz.ajax.js"></script><!-- CONTACT JS  -->
+    <!-- revolution JS FILES -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="https://uploads.yogaintown.co.uk/site/js/rev.slider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            'use strict';
+            dz_rev_slider_2();
+        });	/*ready*/
+    </script>
+</body>
+</html>

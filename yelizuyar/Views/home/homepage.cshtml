@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "sayfa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<style>
+    .acod-head a:after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600;
+        content: "\f068";
+        float: right;
+        color: #EFBB20;
+        font-size: 14px;
+        position: absolute;
+        right: 12px;
+        display: none;
+        top: 12px;
+    }
+
+    .header-nav .nav > li .sub-menu {
+        background-color: #ffffff;
+        display: block;
+        left: 0;
+        list-style: none;
+        opacity: 0;
+        padding: 5px 0;
+        position: absolute;
+        visibility: hidden;
+        width: 298px;
+        z-index: 10;
+    }
+</style>
+
+<div class="w3-display-container">
+    <div class="w3-display-container mySlides">
+        <img src="https://uploads.yogaintown.co.uk/images/mountainscene.jpg" class="img-mobile" alt="mountainscene" loading="lazy">
+    </div>
+</div>
+
+<div class="section-full bg-white content-inner" style="padding-top: 60px; background-image: url(https://uploads.yogaintown.co.uk/images/bg-asset.jpg); background-position: bottom; background-size: 100%; background-repeat: no-repeat;">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 align-self-center">
+                    <img src="https://uploads.yogaintown.co.uk/images/yoga.jpg" alt="yoga" style="position: relative; top: -4px; }" title="yoga.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-8 col-md-1">
+                    <div class="dez-accordion space panel-story" id="accordion1">
+                        <div class="panel">
+                            <div class="acod-head">
+                                <h1 class="acod-title title-story" style="font-family:Playball, cursive; font-weight:700; font-size:38px;">
+                                    <a aria-expanded="false" style="padding: 25px;">
+                                        If you are here, it’s time to meet then! <span class="text-primary"> I'am Yeliz </span>
+                                    </a>
+                                </h1>
+                            </div>
+                            <div id="collapseOne1" class="acod-body collapse show" data-bs-parent="#accordion1" style="color:#000;">
+                                <div class="acod-content" style="font-size:16px;">
+                                    I’m wherever you are, just to inspire you to rebuild a safe, joyful and conscious connection  to yourself– think about it, you have been working
+                                    only the same parts of your body for a long time maybe since your childhood, and there are still parts of your body yearn to be remembered
+                                    and act again, and it is amazing to connect with your limbs, bones, organs, connective tissue, and facia while you move  your body during yoga practices I genuinely promise,
+                                    this bond will not only be established with your physical body, but even more  surprisingly, your strong connection with your instincts will be
+                                    revealed. Here are some questions I leave for you, Would I like to,
+                                    <br /> <br />
+                                    <ul style="position:relative; left:50px;" class="list-biography">
+                                        <li>discover beyond my body comfort zones,</li>
+                                        <li>feel grounded,</li>
+                                        <li>reduce the crowd in my mind and control the stress level</li>
+                                        <li>install a self-system that will bring balance and harmony to my life,</li>
+                                    </ul>
+
+                                    It is worth to try my yoga style combined with mindful protocols, meditation, breathing workouts and music. There is always much more beyond the mat! Let’s discover your path and
+                                    unearth your gifts together…
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
